@@ -1,0 +1,14 @@
+footer {
+    z-index: 9;
+    color: #fff;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    margin-top: 1%;
+}
+
+@media (min-width: 768px) {
+    footer {
+        z-index: 100;
+    }
+}

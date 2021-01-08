@@ -1,0 +1,160 @@
+<nav id="principal"class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-4" [routerLink]="['/']">
+        <img [src]="urlImage" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Nombre del sitio</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+  </button>
+    <!-- col-sm-2 col-lg-5 ml-4 -->
+    <input id="input_buscar" class="form-control form-control-dark" type="text" placeholder="Todo lo que necesitas en un solo lugar..." aria-label="Search ">
+    <button id="boton_buscar" class="ml-0" type="button">
+        <span><i id="icono_buscar" class="fa fa-search" aria-hidden="true"></i></span>
+    </button>
+    <ul id="superior" class="navbar-nav">
+        <!-- col-lg-4 col-sm-2 -->
+        <li class="nav-item text-nowrap ml-0 mr-2">
+            <a class="nav-link" [routerLink]="['/home/']">Productos</a>
+        </li>
+        <li class="nav-item text-nowrap ml-2 mr-2">
+            <a class="nav-link " [routerLink]="['/user/', '1']">Usuario</a>
+        </li>
+        <li class="nav-item text-nowrap ml-2 mr-2">
+            <a class="nav-link" [routerLink]="['/login/']">Iniciar sesión/Registrarse</a>
+        </li>
+        
+    </ul>
+</nav>
+<!-- Barra lateral -->
+<div id="inicio-barra" class="container-fluid mt-2 mb-2">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="sidebar-sticky pt-4 pb-5">
+                <ul id="categoria" class="nav flex-column text-dark">
+                    <li class="nav-item">
+                        <a class="nav-link active" [routerLink]="['/']">
+                            <span data-feather="home"></span> INICIO <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <h6 class="d-flex justify-content-between align-items-center px-3 mt-4 mb-2 text-muted">
+                        <span><i class="fa fa-align-justify"></i><u> CATEGORIAS</u></span>
+
+                    </h6>
+                    <li class="nav-item mt-0">
+                        <!-- ruta pendiente en todo este bloque -->
+                        <a class="nav-link" [routerLink]="['/#/']">
+                        <div class="social-circle float-left">
+                            <i class="fa fa-television"></i>
+                        </div>                                                       
+                            <span class="ml-1">Electrodomesticos</span>                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/#/']">
+                            <div class="social-circle float-left">
+                                <i class="fa fa-home"></i></div>                                                       
+                                <span class="ml-1">Hogar</span>                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/#/']">
+                        <div class="social-circle float-left">
+                            <i class="fa fa-futbol-o"></i>
+                        </div>                                                       
+                            <span class="ml-1">Salud y deporte</span>                            
+                        </a>                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/#/']">
+                            <div class="social-circle float-left">
+                                <i class="fa fa-laptop"></i> 
+                            </div>                                                       
+                                <span class="ml-1"> Tecnología</span>                           
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/#/']">
+                            <div class="social-circle float-left">
+                                <i class="fa fa-truck"></i> 
+                            </div>                                                       
+                                <span class="ml-1"> Servicios</span>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/#/']">
+                            <div class="social-circle float-left">
+                                <i class="fa fa-car"></i>
+                            </div>                                                       
+                                <span class="ml-1"> Automóviles</span>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/#/']">
+                            <div class="social-circle float-left">
+                                <i class="fa fa-shopping-bag"></i> 
+                            </div>                                                       
+                                <span class="ml-1"> Moda y belleza</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/#/']">
+                            <div class="social-circle float-left">
+                                <i class="fa fa-shopping-basket"></i> 
+                            </div>                                                       
+                                <span class="ml-1"> Ropa</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <h6 class="d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span class="text-muted"><i class="fa fa-street-view"><u> CERCA DE TI:</u></i></span>
+                </h6>
+                <div id="cerca_de_ti">
+                    <span><input type="checkbox" name="cerca-ahua" /><label>Ahuachapan</label></span><br>
+                    <span><input type="checkbox" name="cerca-cab" /><label>Cabañas</label></span><br>
+                    <span><input type="checkbox" name="cerca-cha" /><label>Chalatenango</label></span><br>
+                    <span><input type="checkbox" name="cerca-cus" /><label>Cuscatlán</label></span><br>
+                    <span><input type="checkbox" name="cerca-lib" /><label>La Libertad</label></span><br>
+                    <span><input type="checkbox" name="cerca-paz" /><label>La Paz</label></span><br>
+                    <span><input type="checkbox" name="cerca-uni" /><label>La Unión</label></span><br>
+                    <span><input type="checkbox" name="cerca-mor" /><label>Morazán</label></span><br>
+                    <span><input type="checkbox" name="cerca-mig" /><label>San Miguel</label></span><br>
+                    <span><input type="checkbox" name="cerca-sal" /><label>San Salvador</label></span><br>
+                    <span><input type="checkbox" name="cerca-vic" /><label>San Vicente</label></span><br>
+                    <span><input type="checkbox" name="cerca-ana" /><label>Santa Ana</label></span><br>
+                    <span><input type="checkbox" name="cerca-son" /><label>Sonsonate</label></span><br>
+                    <span><input type="checkbox" name="cerca-usu" /><label>Usulután</label></span><br>
+                    <input id="filtro" type="button" name="filtro" value="Filtrar">
+                </div>
+                <hr>
+                <ul class="nav flex-column mb-5">
+                    <li>
+                        <a class="d-flex align-items-center" [routerLink]="['/login/'] " aria-label="Add a new report">                            
+                                <span class="d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                    <i class="fa fa-address-card mr-2"> </i> IDENTIFICATE</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center" [routerLink]="['/about/'] " aria-label="Add a new report">
+                            <span class="d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                <i class="fa fa-users mr-2">  </i> SOBRE NOSOTROS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center" [routerLink]="['/contact/'] " aria-label=" Add a new report">
+                            <span class="d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                                <i class="fa fa-hand-o-right mr-2"></i> AYUDANOS A MEJORAR </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- agregado 
+<div class="flotante ">
+    <button type="button ">
+        
+    <span><a [routerLink]="[ '/user/1/'] ">Volver al principio</a></span>
+</button>
+</div>-->
