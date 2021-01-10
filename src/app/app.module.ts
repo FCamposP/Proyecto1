@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import {Route,RouterModule}from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +24,10 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RecordarProdComponent } from './recordar-prod/recordar-prod.component';
 const routes:Route[]=[
+{path: '', component: HomeComponent},
+{path: 'home', component: HomeComponent},
 {path:'createAccount',component:CreateAccountComponent},
 {path:'iniciar',component:IniciarComponent},
 {path:'deleteaccount',component:DeleteaccountComponent},
@@ -38,9 +40,8 @@ const routes:Route[]=[
 {path:'updateTelefono',component:UpdateTelefonoComponent},
 {path: 'login', component: LoginComponent},
 {path: 'password', component: PasswordComponent},
-{path: '', component: HomeComponent},
 {path: 'agregarprod', component: AgregarprodComponent},
-{path: 'home', component: HomeComponent}
+{path: 'list',component:RecordarProdComponent}
 ];
 
 @NgModule({
@@ -67,6 +68,7 @@ const routes:Route[]=[
     FooterComponent,
     AgregarprodComponent,
     HomeComponent,
+    RecordarProdComponent,
   ],
   imports: [
     BrowserModule,

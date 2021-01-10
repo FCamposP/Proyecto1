@@ -7,6 +7,7 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { IdentificarseComponent } from './components/identificarse/identificarse.component';
+import { RecordarProdComponent } from './recordar-prod/recordar-prod.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'about', component: NosotrosComponent},
   {path: 'contact', component: ContactoComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'list', component: RecordarProdComponent},
   {path: '', component: ProductoComponent, pathMatch: 'full'},
   {path: '**', redirectTo: '/'},
 ];
