@@ -8,6 +8,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { IdentificarseComponent } from './components/identificarse/identificarse.component';
 import { FichaDetalleProductoComponent } from './ficha-detalle-producto/ficha-detalle-producto.component';
+import { RecordarProdComponent } from './recordar-prod/recordar-prod.component';
 
 import { LiveChatComponent } from './live-chat/live-chat.component';
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'about', component: NosotrosComponent},
   {path: 'contact', component: ContactoComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'list', component: RecordarProdComponent},
   {path: '', component: ProductoComponent, pathMatch: 'full'},
   {path: 'ficha', component: FichaDetalleProductoComponent},
   {path: 'livechat', component: LiveChatComponent},

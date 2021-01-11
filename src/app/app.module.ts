@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import {Route,RouterModule}from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +27,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { LiveChatComponent } from './live-chat/live-chat.component';
 import { FichaDetalleProductoComponent } from './ficha-detalle-producto/ficha-detalle-producto.component';
+import { RecordarProdComponent } from './recordar-prod/recordar-prod.component';
 const routes:Route[]=[
+{path: 'home', component: HomeComponent},
+{path: '', component: HomeComponent},
 {path: 'home', component: HomeComponent},
 {path:'createAccount',component:CreateAccountComponent},
 {path:'iniciar',component:IniciarComponent},
@@ -42,8 +44,8 @@ const routes:Route[]=[
 {path:'updateTelefono',component:UpdateTelefonoComponent},
 {path: 'login', component: LoginComponent},
 {path: 'password', component: PasswordComponent},
-{path: '', component: HomeComponent},
 {path: 'agregarprod', component: AgregarprodComponent},
+{path: 'list',component:RecordarProdComponent}
 {path: 'home', component: HomeComponent},
 {path: 'perfil',component:PerfilComponent}
 {path: 'ficha', component: FichaDetalleProductoComponent}
@@ -76,6 +78,7 @@ const routes:Route[]=[
     FichaDetalleProductoComponent,
     LiveChatComponent,
     PerfilComponent,
+    RecordarProdComponent,
   ],
   imports: [
     BrowserModule,
