@@ -1,118 +1,126 @@
 <div class="container">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 
-  <div class="container">
-    <h1  class="display-4" align ="center" >TABLA PRODUCTOS</h1>
-    <table class="table">
-      <thead class="thead-dark">
+<div class="container">
+  <h1  class="display-4" align ="center" >TABLA PRODUCTOS</h1>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Número</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Detalles</th>
+        <th scope="col">Categoría</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th> <!-- Número -->
+        <td>
+          <a class="nav-link" [routerLink]="['/ficha/']">
+          Computadora
+        </a>
+      </td> <!-- Nombre -->
+        <td>Facil Uso</td> <!-- Descripcion -->
+        <td>$200</td> <!-- Precio -->
+        <td>3</td> <!-- Cantidad -->
+        <td>@Golpe pantalla</td> <!-- Detalles -->
+        <td>@A</td> <!-- Categoria -->
+        <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+        </svg></td>
+        <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
+      </tr>
+
+      <tr>
+        <th scope="row">2</th> <!-- Número -->
+        <td>
+          <a class="nav-link" [routerLink]="['/ficha/']">
+          Mouse
+        </a>
+      </td> <!-- Nombre -->
+        <td>Es inalambrico</td> <!-- Descripcion -->
+        <td>$15</td> <!-- Precio -->
+        <td>9</td> <!-- Cantidad -->
+        <td>Nuevo</td> <!-- Detalles -->
+        <td>@A</td> <!-- Categoria -->
+        <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+        </svg></td>
+        <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
+      </tr>
+
+      <tr>
+        <th scope="row">3</th> <!-- Número -->
+        <td>
+          <a class="nav-link" [routerLink]="['/ficha/']">
+          Teclado Mecanico
+        </a>
+      </td> <!-- Nombre -->
+        <td>Teclado y de paso Mecanico</td> <!-- Descripcion -->
+        <td>$49</td> <!-- Precio -->
+        <td>5</td> <!-- Cantidad -->
+        <td>Semi-Nuevo</td> <!-- Detalles -->
+        <td>@A</td> <!-- Categoria -->
+        <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+        </svg></td>
+        <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
+      </tr>
+
+      <tr>
+        <th scope="row">4</th> <!-- Número -->
+        <td>
+          <a class="nav-link" [routerLink]="['/ficha/']">
+          Bocinas RGB
+        </a>
+      </td> <!-- Nombre -->
+        <td>Excelente Bajo</td> <!-- Descripcion -->
+        <td>$35</td> <!-- Precio -->
+        <td>2</td> <!-- Cantidad -->
+        <td>Nuevo</td> <!-- Detalles -->
+        <td>@A</td> <!-- Categoria -->
+        <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+        </svg></td>
+        <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
+      </tr>
+
         <tr>
-          <th scope="col">Número</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Descripción</th>
-          <th scope="col">Precio</th>
-          <th scope="col">Cantidad</th>
-          <th scope="col">Detalles</th>
-          <th scope="col">Categoría</th>
-          <th scope="col"></th>
-          <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>1</td>
-          <td>Computadora</td>
-          <td>Facil Uso</td>
-          <td>$200</td>
-          <td>@Golpe pantalla</td>
-          <td>@A</td>
+          <th scope="row">5</th> <!-- Número -->
+          <td>
+            <a class="nav-link" [routerLink]="['/ficha/']">
+            PS6
+          </a>
+        </td> <!-- Nombre -->
+          <td>Mata PC</td> <!-- Descripcion -->
+          <td>$958</td> <!-- Precio -->
+          <td>1</td> <!-- Cantidad -->
+          <td>Nuevo</td> <!-- Detalles -->
+          <td>@A</td> <!-- Categoria -->
           <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
           </svg></td>
           <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
         </tr>
-        
-        <tr>
-          <th scope="row">2</th>
-          <td>1</td>
-          <td>Mouse</td>
-          <td>Es inalámbrico</td>
-          <td>$15</td>
-          <td>Nuevo</td>
-          <td>A</td>
-          <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-          </svg></td>
-          <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
-        </tr>
-  
-        <tr>
-          <th scope="row">1</th>
-          <td>1</td>
-          <td>Computadora</td>
-          <td>Facil Uso</td>
-          <td>$200</td>
-          <td>@Golpe pantalla</td>
-          <td>@A</td>
-          <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-          </svg></td>
-          <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
-        </tr>
-  
-        <tr>
-          <th scope="row">2</th>
-          <td>1</td>
-          <td>Mouse</td>
-          <td>Es inalámbrico</td>
-          <td>$15</td>
-          <td>Nuevo</td>
-          <td>A</td>
-          <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-          </svg></td>
-          <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
-        </tr>
-  
-          <tr>
-            <th scope="row">1</th>
-            <td>1</td>
-            <td>Computadora</td>
-            <td>Facil Uso</td>
-            <td>$200</td>
-            <td>@Golpe pantalla</td>
-            <td>@A</td>
-            <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-            </svg></td>
-            <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
-          </tr>
-          <tr>
-          <th scope="row">6</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-          <td>@fat</td>
-          <td>@fat</td>
-          <td>@fat</td>
-          <td><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-          </svg></td>
-          <td><button type="button" class="btn btn-danger btn-block">Eliminar</button></td>
-          <tr>
-  
-      
-      </tbody>
-    </table>
-  
-    <div class="container-fluid h-100">
-      <div class="row w-100">
-        <div class="col">
-          <button type="Guardar" class="btn btn-danger btn-block" routerLink="/agregarprod">Agregar Producto</button>
-        </div>
+
+
+
+    </tbody>
+  </table>
+
+  <div class="container-fluid h-100">
+    <div class="row w-100">
+      <div class="col">
+        <button type="Guardar" class="btn btn-danger btn-block" routerLink="/agregarprod">Agregar Producto</button>
       </div>
-  
     </div>
-  
+
   </div>
+
+</div>

@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /*Inicio de estilo para la Interfaz General */
 
+.monospaced { font-family: 'Ubuntu Mono', monospaced ; }
+
 body {
     font-size: .875rem;
 }

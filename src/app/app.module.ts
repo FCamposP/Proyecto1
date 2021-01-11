@@ -26,7 +26,9 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LiveChatComponent } from './live-chat/live-chat.component';
+import { FichaDetalleProductoComponent } from './ficha-detalle-producto/ficha-detalle-producto.component';
 const routes:Route[]=[
+{path: 'home', component: HomeComponent},
 {path:'createAccount',component:CreateAccountComponent},
 {path:'iniciar',component:IniciarComponent},
 {path:'deleteaccount',component:DeleteaccountComponent},
@@ -41,7 +43,7 @@ const routes:Route[]=[
 {path: 'password', component: PasswordComponent},
 {path: '', component: HomeComponent},
 {path: 'agregarprod', component: AgregarprodComponent},
-{path: 'home', component: HomeComponent}
+{path: 'ficha', component: FichaDetalleProductoComponent}
 ];
 
 @NgModule({
@@ -68,6 +70,7 @@ const routes:Route[]=[
     FooterComponent,
     AgregarprodComponent,
     HomeComponent,
+    FichaDetalleProductoComponent,
     LiveChatComponent,
   ],
   imports: [
