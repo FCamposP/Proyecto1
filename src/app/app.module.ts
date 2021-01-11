@@ -25,6 +25,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PerfilComponent } from './perfil/perfil.component';
 import { LiveChatComponent } from './live-chat/live-chat.component';
 import { FichaDetalleProductoComponent } from './ficha-detalle-producto/ficha-detalle-producto.component';
 const routes:Route[]=[
@@ -43,6 +44,8 @@ const routes:Route[]=[
 {path: 'password', component: PasswordComponent},
 {path: '', component: HomeComponent},
 {path: 'agregarprod', component: AgregarprodComponent},
+{path: 'home', component: HomeComponent},
+{path: 'perfil',component:PerfilComponent}
 {path: 'ficha', component: FichaDetalleProductoComponent}
 ];
 
@@ -72,6 +75,7 @@ const routes:Route[]=[
     HomeComponent,
     FichaDetalleProductoComponent,
     LiveChatComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,
