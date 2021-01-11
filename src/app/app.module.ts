@@ -42,7 +42,7 @@ const routes:Route[]=[
 {path: '', component: HomeComponent},
 {path: 'agregarprod', component: AgregarprodComponent},
 {path: 'home', component: HomeComponent},
-{path: 'perfil',component:PerfilComponent}
+{path: 'perfil', component: PerfilComponent}
 ];
 
 @NgModule({

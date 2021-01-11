@@ -7,7 +7,7 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { IdentificarseComponent } from './components/identificarse/identificarse.component';
-
+import {PerfilComponent} from './perfil/perfil.component';
 
 const routes: Routes = [
   //{path: 'product', component: ProductoComponent},
@@ -15,6 +15,7 @@ const routes: Routes = [
   {path: 'user/:id', component: UsuarioComponent},
   {path: 'about', component: NosotrosComponent},
   {path: 'contact', component: ContactoComponent},
+    {path: 'perfil', component: PerfilComponent},
   {path: 'login', component: LoginComponent},
   {path: '', component: ProductoComponent, pathMatch: 'full'},
   {path: '**', redirectTo: '/'},
