@@ -25,6 +25,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LiveChatComponent } from './live-chat/live-chat.component';
 const routes:Route[]=[
 {path:'createAccount',component:CreateAccountComponent},
 {path:'iniciar',component:IniciarComponent},
@@ -67,6 +68,7 @@ const routes:Route[]=[
     FooterComponent,
     AgregarprodComponent,
     HomeComponent,
+    LiveChatComponent,
   ],
   imports: [
     BrowserModule,
