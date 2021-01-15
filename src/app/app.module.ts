@@ -26,6 +26,8 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LiveChatComponent } from './live-chat/live-chat.component';
+import { LateralComponent } from './live-chat/lateral/lateral.component';
+import { CuerpoComponent } from './live-chat/cuerpo/cuerpo.component';
 const routes:Route[]=[
 {path:'createAccount',component:CreateAccountComponent},
 {path:'iniciar',component:IniciarComponent},
@@ -69,6 +71,8 @@ const routes:Route[]=[
     AgregarprodComponent,
     HomeComponent,
     LiveChatComponent,
+    LateralComponent,
+    CuerpoComponent,
   ],
   imports: [
     BrowserModule,
