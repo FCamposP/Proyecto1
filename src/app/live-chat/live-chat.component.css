@@ -150,3 +150,7 @@ input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:las
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+.estado-color{
+  color: green;
+}
